@@ -1,0 +1,98 @@
+html, body{
+    margin: 0;
+    padding: 40px;
+    height: 100vh;
+    background-color: rgb(219, 233, 228);
+}
+
+.main{
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.carousel, .hide
+{
+    display: none;
+}
+
+.show{
+    display: block;
+    animation: showAnimation 1s;
+}
+
+img{
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+}
+
+h3{
+    position: relative;
+    top: -70px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    color: white;
+    font-family: cursive;
+}
+
+.carousel-manual{
+    width: 100%;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    top: -250px;
+    transform: translateY(-50%);
+}
+
+button{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: #fff;
+    font-size: 20px;
+    font-weight: bolder;
+}
+
+#backward-btn{
+    margin-left: 10px;
+}
+
+#forward-btn{
+    margin-right: 10px;
+}
+
+.identifier{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: -110px;
+}
+
+.identifier div{
+    border: solid 2px rgb(109, 119, 119);
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.neutral{
+    background: 0;
+}
+
+.active{
+    background-color: aqua;
+}
+
+@keyframes showAnimation {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
